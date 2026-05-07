@@ -1,0 +1,219 @@
+<DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> МарсТур - відпочинь від Землі </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <!--Навігація-->
+    <header> 
+        <nav> 
+            <div class="logo"> 🚀 МарсТур </div>
+            <ul> 
+                <li><a href="#mission">Про нас</a></li>
+                <li><a href="#tours">Тури</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#facts">Факти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Головний банер -->
+    <section id="hero"> 
+        <div class="hero-content"> 
+            <h1> Відпочинь від Землі.<br>Буквально </h1>
+            <p> Перше туристичне агентство міжпланетного класу.<br>
+            Вже 847 задоволених клієнтів. 3 незадоволених (але це інша історія). </p>
+            <a href="#tours" class="btn"> Обрати тур </a>
+        </div>
+    </section>
+
+    <!-- Про агентство -->
+    <section id="mission"> 
+        <h2> Про нас </h2>
+        <p class="section-subtitle"> Ми не просто туристичне агентство. Ми мрія. </p>
+        <div class="mission-cards">
+            <div class="mission-card">
+                <span class="mission-icon">🚀</span>
+                <h3> Засновані у 2031 </h3>
+                <p> Коли Ілон Маск нарешті визнав, що сам туди не летить </p>
+            </div>
+
+            <div class="mission-card">
+                <span class="mission-icon">👨‍🚀</span>
+                <h3> 847 клієнтів </h3>
+                <p> Задоволені. Більшість. Зв'язок з рештою тимчасово відсутній </p>
+            </div>
+
+            <div class="mission-card">
+                <span class="mission-icon">🪐</span>
+                <h3> 1 планета </h3>
+                <p> Поки що. Юпітер у планах на 2089 рік </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тури -->
+    <section id="tours"> 
+        <h2> Наші тури </h2>
+        <p class="section-subtitle"> Обери куди летіти. Зворотній квиток необов'язковий. </p>
+        <div class="tour-cards">
+            <div class="tour-card">
+                <div class="tour-img">🌋</div>
+                <h3> Гора Олімп </h3>
+                <p> Найвища гора в сонячній системі. 21 км заввишки. Ліфт не передбачений. </p>
+                <div class="tour-price"> $4,200,000,000 </div>
+                <div class="tour-duration"> ⏱ 14 місяців </div>
+                <button class="btn" onclick="openBooking()"> Забронювати </button>
+            </div>
+
+            <div class="tour-card">
+                <div class="tour-img">🕳️</div>
+                <h3> Кратер Гейл </h3>
+                <p> Де колись було озеро. Тепер пилюка. Але яка пилюка — марсіанська! </p>
+                <div class="tour-price"> $2,800,000,000 </div>
+                <div class="tour-duration"> ⏱ 8 місяців </div>
+                <button class="btn" onclick="openBooking()"> Забронювати </button>
+            </div>
+
+            <div class="tour-card">
+                <div class="tour-img">🏜️</div>
+                <h3> Долина Марінер </h3>
+                <p> Найдовший каньйон у сонячній системі. 4000 км. Є де погуляти. </p>
+                <div class="tour-price"> $3,500,000,000 </div>
+                <div class="tour-duration"> ⏱ 11 місяців </div>
+                <button class="btn" onclick="openBooking()"> Забронювати </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section id="team">
+        <h2>Наша команда</h2>
+        <p class="section-subtitle">Досвідчені професіонали. Майже всі повернулись.</p>
+        <div class="team-cards">
+
+            <div class="team-card">
+                <div class="team-avatar">👨‍🚀</div>
+                <h3> Василь Коваленко </h3>
+                <p class="team-role"> Головний гід </p>
+                <p> 12 років на Марсі. Вижив тричі. Четвертий раз не рахується. </p>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">👩‍🔬</div>
+                <h3> Оксана Мельник </h3>
+                <p class="team-role"> Лікар місії </p>
+                <p> Спеціаліст з марсіанського пилу в легенях. Авторка книги "Дихай рідше". </p>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">🧑‍💻</div>
+                <h3> Дмитро Шевченко </h3>
+                <p class="team-role">Технічний директор</p>
+                <p> Полагодив скафандр скотчем 7 разів. Жоден клієнт не постраждав. Серйозно. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery">
+        <h2> Галерея </h2>
+        <p class="section-subtitle"> Фото наших щасливих туристів. І пейзажів. </p>
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Марс з орбіти">
+                <div class="gallery-caption"> Вид з вікна літака. Бізнес-клас. </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Martian_sunset_PIA00920.jpg/1280px-Martian_sunset_PIA00920.jpg" alt="Захід сонця на Марсі">
+                <div class="gallery-caption"> Захід сонця. Синій, бо так. Не запитуй. </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Mars_Valles_Marineris.jpeg/1280px-Mars_Valles_Marineris.jpeg" alt="Долина Марінер">
+                <div class="gallery-caption"> Долина Марінер. Де загубився Василь у 2041. </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_Rock_on_Mars.jpg/1024px-White_Rock_on_Mars.jpg" alt="Марсіанські скелі">
+                <div class="gallery-caption"> Наш п'ятизірковий готель. Ремонт у процесі. </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Факти -->
+    <section id="facts">
+        <h2> Чому Марс кращий за Мальдіви </h2>
+        <p class="section-subtitle"> Науково доведено. Нами. </p>
+        <div class="facts-grid">
+
+            <div class="fact-card">
+                <span class="fact-icon">☀️</span>
+                <h3> Сонце менше </h3>
+                <p> Не обгориш. Сонячний крем не потрібен. Потрібен скафандр. </p>
+            </div>
+
+            <div class="fact-card">
+                <span class="fact-icon">⚖️</span>
+                <h3> Важиш менше </h3>
+                <p> Гравітація 38% від земної. Відчуваєш себе легко. Буквально. </p>
+            </div>
+
+            <div class="fact-card">
+                <span class="fact-icon">🤫</span>
+                <h3> Тихо </h3>
+                <p> Атмосфера така тонка що майже нічого не чути. Сусідів теж. </p>
+            </div>
+
+            <div class="fact-card">
+                <span class="fact-icon">📸</span>
+                <h3> Унікальні фото </h3>
+                <p> Жоден твій друг ще не був на Марсі. Instagram буде твій. </p>
+            </div>
+
+            <div class="fact-card">
+                <span class="fact-icon">🌡️</span>
+                <h3> Прохолодно </h3>
+                <p> Середня температура -60°C. Забудь про спеку. Назавжди. </p>
+            </div>
+
+            <div class="fact-card">
+                <span class="fact-icon">🏆</span>
+                <h3> Статус </h3>
+                <p> Ти був на Марсі. Більше нічого пояснювати не треба. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Про автора -->
+    <section id="author">
+        <h2>Про автора</h2>
+        <div class="author-card">
+            <div class="author-avatar">🧑‍💻</div>
+            <div class="author-info">
+                <h3>Твоє Імʼя</h3>
+                <p class="author-role">Розробник сайту</p>
+                <p>Учень школи програмування. Створив цей сайт бо вірю — одного дня людство полетить на Марс. А поки що — хоча б сайт про це.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Низ сайту -->
+    <footer>
+        <p>🚀 МарсТур — офіційний туроператор Червоної планети</p>
+        <p>© 2157 МарсТур. Всі права захищені. На Землі і за її межами.</p>
+        <p class="footer-small">* Компанія не несе відповідальності за втрату зв'язку, гравітаційні аномалії та екзистенційні кризи під час польоту.</p>
+    </footer>
+
+</body>
+</html>

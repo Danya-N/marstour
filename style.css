@@ -1,0 +1,295 @@
+/* загальне */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1a0a0a;
+    color: #f5ede0;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f5a623;
+}
+
+section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #c9a98a;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e8630a;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f5a623;
+}
+
+/* хедер */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0d0505;
+    padding: 16px 40px;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f5a623;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul a {
+    color: #f5ede0;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #f5a623;
+}
+
+/* hero */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #3d1a1a 0%, #1a0a0a 70%);
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: #c9a98a;
+}
+
+/* місія */
+.mission-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.mission-card {
+    background-color: #2d1515;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    flex: 1;
+}
+
+.mission-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.mission-card h3 {
+    color: #f5a623;
+    margin-bottom: 10px;
+}
+
+/* тури */
+.tour-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tour-card {
+    background-color: #2d1515;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    flex: 1;
+}
+
+.tour-img {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.tour-card h3 {
+    color: #f5a623;
+    margin-bottom: 10px;
+}
+
+.tour-price {
+    font-size: 1.3rem;
+    color: #e8630a;
+    font-weight: bold;
+    margin: 16px 0 8px;
+}
+
+.tour-duration {
+    color: #c9a98a;
+    margin-bottom: 20px;
+}
+
+/* команда */
+.team-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-card {
+    background-color: #2d1515;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    flex: 1;
+}
+
+.team-avatar {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.team-card h3 {
+    color: #f5a623;
+    margin-bottom: 6px;
+}
+
+.team-role {
+    color: #e8630a;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+/* галерея */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f5ede0;
+    padding: 10px 16px;
+    text-align: center;
+}
+
+/* факти */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.fact-card {
+    background-color: #2d1515;
+    padding: 28px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.fact-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.fact-card h3 {
+    color: #f5a623;
+    margin-bottom: 8px;
+}
+
+/* автор */
+.author-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #2d1515;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.author-avatar {
+    font-size: 80px;
+}
+
+.author-role {
+    color: #e8630a;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+/* футер */
+footer {
+    background-color: #0d0505;
+    text-align: center;
+    padding: 40px;
+    color: #c9a98a;
+    line-height: 2;
+}
+
+.footer-small {
+    font-size: 0.8rem;
+    color: #6b4c4c;
+    margin-top: 10px;
+}
