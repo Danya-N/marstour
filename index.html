@@ -34,51 +34,65 @@
     </section>
 
     <!-- Про агентство -->
-<section id="mission">
-    <div class="mission-content">
-        <img src="images/about.jpg" alt="Офіс МарсТур">
-        <div class="mission-text">
-            <h2>Про нас</h2>
-            <p>МарсТур — перше туристичне агентство міжпланетного класу. Засновані у 2031 році, коли Ілон Маск нарешті визнав, що сам туди не летить.</p>
-            <p>За 126 років роботи ми відправили <span class="highlight">847 туристів</span> на Червону планету. Більшість повернулись. Зв'язок з рештою тимчасово відсутній.</p>
-            <p>Наша місія — зробити Марс доступним для кожного. Ну, майже кожного. Ціни поки що кусаються.</p>
-        </div>
-    </div>
-</section>
-
-    <!-- Тури -->
-    <section id="tours"> 
-        <h2> Наші тури </h2>
-        <p class="section-subtitle"> Обери куди летіти. Зворотній квиток необов'язковий. </p>
-        <div class="tour-cards">
-            <div class="tour-card">
-                <div class="tour-img">🌋</div>
-                <h3> Гора Олімп </h3>
-                <p> Найвища гора в сонячній системі. 21 км заввишки. Ліфт не передбачений. </p>
-                <div class="tour-price"> $4,200,000,000 </div>
-                <div class="tour-duration"> ⏱ 14 місяців </div>
-                <button class="btn" onclick="openBooking()"> Забронювати </button>
-            </div>
-
-            <div class="tour-card">
-                <div class="tour-img">🕳️</div>
-                <h3> Кратер Гейл </h3>
-                <p> Де колись було озеро. Тепер пилюка. Але яка пилюка — марсіанська! </p>
-                <div class="tour-price"> $2,800,000,000 </div>
-                <div class="tour-duration"> ⏱ 8 місяців </div>
-                <button class="btn" onclick="openBooking()"> Забронювати </button>
-            </div>
-
-            <div class="tour-card">
-                <div class="tour-img">🏜️</div>
-                <h3> Долина Марінер </h3>
-                <p> Найдовший каньйон у сонячній системі. 4000 км. Є де погуляти. </p>
-                <div class="tour-price"> $3,500,000,000 </div>
-                <div class="tour-duration"> ⏱ 11 місяців </div>
-                <button class="btn" onclick="openBooking()"> Забронювати </button>
+    <section id="mission">
+        <div class="mission-content">
+            <img src="images/about.jpg" alt="Офіс МарсТур">
+            <div class="mission-text">
+                <h2>Про нас</h2>
+                <p>МарсТур — перше туристичне агентство міжпланетного класу. Засновані у 2031 році, коли Ілон Маск нарешті визнав, що сам туди не летить.</p>
+                <p>За 126 років роботи ми відправили <span class="highlight">847 туристів</span> на Червону планету. Більшість повернулись. Зв'язок з рештою тимчасово відсутній.</p>
+                <p>Наша місія — зробити Марс доступним для кожного. Ну, майже кожного. Ціни поки що кусаються.</p>
             </div>
         </div>
     </section>
+
+    <!-- Тури -->
+    <section id="tours">
+        <h2>Наші тури</h2>
+        <p class="section-subtitle">Обери куди летіти. Зворотній квиток необов'язковий.</p>
+        <div class="tour-cards">
+
+            <div class="tour-card">
+                <div class="tour-header">
+                    <img src="images/tour1.jpg" alt="Гора Олімп">
+                    <h3>Гора Олімп</h3>
+                </div>
+                <div class="tour-body">
+                    <p>Найвища гора в сонячній системі. 21 км заввишки. Ліфт не передбачений.</p>
+                    <div class="tour-price">$4,200,000,000</div>
+                    <div class="tour-duration">⏱ 14 місяців</div>
+                    <button class="btn" onclick="openBooking()">Забронювати</button>
+                </div>
+            </div>
+
+            <div class="tour-card featured">
+                <div class="tour-header">
+                    <img src="images/tour2.jpg" alt="Кратер Гейл">
+                    <h3>Кратер Гейл</h3>
+                </div>
+                <div class="tour-body">
+                    <p>Де колись було озеро. Тепер пилюка. Але яка пилюка — марсіанська!</p>
+                    <div class="tour-price">$2,800,000,000</div>
+                    <div class="tour-duration">⏱ 8 місяців</div>
+                    <button class="btn" onclick="openBooking()">Забронювати</button>
+                </div>
+        </div>
+
+            <div class="tour-card">
+                <div class="tour-header">
+                    <img src="images/tour3.jpg" alt="Долина Марінер">
+                    <h3>Долина Марінер</h3>
+                </div>
+                <div class="tour-body">
+                    <p>Найдовший каньйон у сонячній системі. 4000 км. Є де погуляти.</p>
+                    <div class="tour-price">$3,500,000,000</div>
+                    <div class="tour-duration">⏱ 11 місяців</div>
+                    <button class="btn" onclick="openBooking()">Забронювати</button>
+                </div>
+            </div>
+
+    </div>
+</section>
 
     <!-- Команда -->
     <section id="team">
