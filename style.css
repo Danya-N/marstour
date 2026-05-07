@@ -57,7 +57,7 @@ header {
     top: 0;
     width: 100%;
     background-color: #0d0505;
-    padding: 16px 40px;
+    padding: 20px 40px;
     z-index: 100;
 }
 
@@ -79,6 +79,9 @@ nav ul {
     display: flex;
     gap: 30px;
     list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav ul a {
@@ -88,6 +91,12 @@ nav ul a {
 
 nav ul a:hover {
     color: #f5a623;
+}
+
+.nav-btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    margin-right: 20px;
 }
 
 /* hero */
@@ -437,6 +446,19 @@ nav ul a:hover {
 }
 
 /* автор */
+/* автор */
+#author {
+    background-color: #120808;
+    max-width: 100%;
+    padding: 80px 40px;
+}
+
+#author h2 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .author-card {
     display: flex;
     align-items: center;
@@ -448,27 +470,87 @@ nav ul a:hover {
     margin: 0 auto;
 }
 
-.author-avatar {
-    font-size: 80px;
+.author-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #e8630a;
+    flex-shrink: 0;
+}
+
+.author-info h3 {
+    color: #f5a623;
+    margin-bottom: 6px;
 }
 
 .author-role {
     color: #e8630a;
-    margin-bottom: 12px;
     font-style: italic;
+    margin-bottom: 12px;
 }
-
+/* футер */
 /* футер */
 footer {
     background-color: #0d0505;
-    text-align: center;
-    padding: 40px;
+    padding: 60px 40px 30px;
+    border-top: 1px solid #3d1515;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
     color: #c9a98a;
     line-height: 2;
 }
 
+.footer-logo {
+    font-size: 1.3rem;
+    color: #f5a623;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-title {
+    color: #f5a623;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+    text-align: left;
+}
+
+.footer-center .footer-title {
+    grid-column: 1 / 3;
+}
+
+.footer-center a {
+    color: #c9a98a;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    color: #f5a623;
+}
+
+.footer-right {
+    text-align: right;
+}
+
 .footer-small {
-    font-size: 0.8rem;
-    color: #6b4c4c;
-    margin-top: 10px;
+    font-size: 0.75rem;
+    color: #4a2a2a;
+    margin-top: 8px;
 }
