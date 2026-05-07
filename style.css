@@ -413,15 +413,22 @@ nav ul a:hover {
 
 .fact-card {
     background-color: #2d1515;
-    padding: 28px;
+    padding: 32px 24px;
     border-radius: 16px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.fact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(232, 99, 10, 0.2);
 }
 
 .fact-icon {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 12px;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
 }
 
 .fact-card h3 {
