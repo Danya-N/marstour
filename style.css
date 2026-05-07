@@ -342,30 +342,66 @@ nav ul a:hover {
 }
 
 /* галерея */
+#gallery {
+    background-color: #120808;
+    max-width: 100%;
+    padding: 80px 40px;
+}
+
+#gallery h2, #gallery .section-subtitle {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .gallery-item {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
 }
 
 .gallery-caption {
-    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
     color: #f5ede0;
-    padding: 10px 16px;
+    padding: 30px 16px 14px;
     text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
 }
 
 /* факти */
