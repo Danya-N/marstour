@@ -117,30 +117,35 @@ nav ul a:hover {
     color: #c9a98a;
 }
 
-/* місія */
-.mission-cards {
+/* про нас */
+.mission-content {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    min-height: 70vh;
 }
 
-.mission-card {
-    background-color: #2d1515;
-    padding: 30px;
+.mission-content img {
+    width: 55%;
     border-radius: 16px;
-    text-align: center;
-    flex: 1;
 }
 
-.mission-icon {
-    font-size: 48px;
-    display: block;
+.mission-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.mission-text p {
     margin-bottom: 16px;
+    line-height: 1.8;
+    color: #c9a98a;
+    font-size: 1.1rem;
 }
 
-.mission-card h3 {
+.highlight {
     color: #f5a623;
-    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 /* тури */
