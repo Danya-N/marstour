@@ -127,6 +127,21 @@ nav ul a:hover {
 }
 
 /* про нас */
+#mission {
+    background: linear-gradient(rgba(26,10,10,0.75), rgba(26,10,10,0.75)), url('images/bg-space.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 80px 40px;
+    background-attachment: fixed;
+}
+
+.section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .mission-content {
     display: flex;
     align-items: center;
@@ -159,9 +174,12 @@ nav ul a:hover {
 
 /* тури */
 #tours {
-    background-color: #120808;
+    background: linear-gradient(rgba(18,8,8,0.75), rgba(18,8,8,0.75)), url('images/bg-mars-land.jpg');
+    background-size: cover;
+    background-position: center;
     max-width: 100%;
     padding: 80px 40px;
+    background-attachment: fixed;
 }
 
 #tours h2, #tours .section-subtitle {
@@ -255,9 +273,12 @@ nav ul a:hover {
 
 /* команда */
 #team {
-    background-color: #1a0a0a;
+    background: linear-gradient(rgba(26,10,10,0.75), rgba(26,10,10,0.75)), url('images/bg-space.jpg');
+    background-size: cover;
+    background-position: center;
     max-width: 100%;
     padding: 80px 40px;
+    background-attachment: fixed;
 }
 
 #team h2, #team .section-subtitle {
@@ -352,9 +373,12 @@ nav ul a:hover {
 
 /* галерея */
 #gallery {
-    background-color: #120808;
+    background: linear-gradient(rgba(18,8,8,0.75), rgba(18,8,8,0.75)), url('images/bg-mars-land.jpg');
+    background-size: cover;
+    background-position: center;
     max-width: 100%;
     padding: 80px 40px;
+    background-attachment: fixed;
 }
 
 #gallery h2, #gallery .section-subtitle {
@@ -414,6 +438,16 @@ nav ul a:hover {
 }
 
 /* факти */
+#facts {
+    background: linear-gradient(rgba(26,10,10,0.75), rgba(26,10,10,0.75)), url('images/bg-space.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0;
+    padding: 80px 40px;
+}
+
 .facts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -446,11 +480,13 @@ nav ul a:hover {
 }
 
 /* автор */
-/* автор */
 #author {
-    background-color: #120808;
+    background: linear-gradient(rgba(18,8,8,0.75), rgba(18,8,8,0.75)), url('images/bg-space.jpg');
+    background-size: cover;
+    background-position: center;
     max-width: 100%;
     padding: 80px 40px;
+    background-attachment: fixed;
 }
 
 #author h2 {
