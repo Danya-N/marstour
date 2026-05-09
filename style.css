@@ -589,3 +589,15 @@ footer {
     color: #4a2a2a;
     margin-top: 8px;
 }
+
+/* анімація появи секцій*/
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
