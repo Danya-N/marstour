@@ -28,3 +28,24 @@ const observer = new IntersectionObserver(function(entries) {
 document.querySelectorAll('.fade-up').forEach(function(el) {
     observer.observe(el);
 });
+
+// Таймер зворотного відліку до запуску
+const launchDate = new Date('2027-07-20T10:00:00');
+
+function updateTimer() {
+    const now = new Date();
+    const diff = launchDate - now; // різниця в мілісекундах
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+    document.getElementById('seconds').textContent = seconds;
+}
+
+updateTimer(); // запускаємо одразу
+setInterval(updateTimer, 1000); // оновлюємо кожну секунду
