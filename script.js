@@ -62,7 +62,29 @@ function closeModal() {
     document.getElementById('bookingForm').reset(); // очищаємо форму
 }
 
-function openBooking() {
-    const booking = document.querySelector('#booking');
-    booking.scrollIntoView({ behavior: 'smooth' }); // прокрутка до форми
+function openBooking(btn) {
+    // знаходимо картку туру до якої належить кнопка
+    const card = btn.closest('.tour-card');
+    const seatsEl = card.querySelector('.seats-count');
+    let seats = parseInt(seatsEl.textContent);
+
+    if (seats > 0) {
+        seats--; // зменшуємо на 1
+        seatsEl.textContent = seats;
+
+        // якщо мало місць — підсвічуємо червоним
+        if (seats <= 2) {
+            card.querySelector('.tour-seats').classList.add('low');
+        }
+
+        // якщо місць не лишилось — блокуємо кнопку
+        if (seats === 0) {
+            btn.textContent = 'Місця закінчились';
+            btn.disabled = true;
+            btn.style.opacity = '0.5';
+        }
+    }
+
+    // прокручуємо до форми
+    document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
 }

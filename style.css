@@ -45,10 +45,12 @@ section {
     font-size: 1rem;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #f5a623;
+    background-color: #ff7b2c;
+    transform: translateY(-2px);
 }
 
 /* хедер */
@@ -369,6 +371,17 @@ nav ul a:hover {
 .team-card-small .team-role {
     font-size: 0.8rem;
     margin: 0;
+}
+
+.tour-seats {
+    color: #c9a98a;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.tour-seats.low {
+    color: #e8630a;
+    font-weight: bold;
 }
 
 /* галерея */
@@ -743,4 +756,22 @@ footer {
     color: #c9a98a;
     line-height: 1.8;
     margin-bottom: 28px;
+}
+
+/* виправлення ховеру для карток з анімацією */
+.tour-card.visible:hover {
+    transform: translateY(-8px);
+}
+
+.team-card-main.visible:hover {
+    transform: translateY(-8px);
+}
+
+.team-card-small.visible:hover {
+    transform: translateY(-6px);
+}
+
+.fact-card.visible:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(232, 99, 10, 0.2);
 }
