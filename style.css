@@ -128,7 +128,7 @@ nav ul a:hover {
 
 /* про нас */
 #mission {
-    background: linear-gradient(rgba(26,10,10,0.75), rgba(26,10,10,0.75)), url('images/bg-space.jpg');
+    background: linear-gradient(rgba(26,10,10,0.55), rgba(26,10,10,0.55)), url('images/bg-space.jpg');
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -174,7 +174,7 @@ nav ul a:hover {
 
 /* тури */
 #tours {
-    background: linear-gradient(rgba(18,8,8,0.75), rgba(18,8,8,0.75)), url('images/bg-mars-land.jpg');
+    background: linear-gradient(rgba(18,8,8,0.55), rgba(18,8,8,0.55)), url('images/bg-mars-land.jpg');
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -273,7 +273,7 @@ nav ul a:hover {
 
 /* команда */
 #team {
-    background: linear-gradient(rgba(26,10,10,0.75), rgba(26,10,10,0.75)), url('images/bg-space.jpg');
+    background: linear-gradient(rgba(26,10,10,0.55), rgba(26,10,10,0.55)), url('images/bg-space.jpg');
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -373,7 +373,7 @@ nav ul a:hover {
 
 /* галерея */
 #gallery {
-    background: linear-gradient(rgba(18,8,8,0.75), rgba(18,8,8,0.75)), url('images/bg-mars-land.jpg');
+    background: linear-gradient(rgba(18,8,8,0.55), rgba(18,8,8,0.55)), url('images/bg-mars-land.jpg');
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -439,7 +439,7 @@ nav ul a:hover {
 
 /* факти */
 #facts {
-    background: linear-gradient(rgba(26,10,10,0.75), rgba(26,10,10,0.75)), url('images/bg-space.jpg');
+    background: linear-gradient(rgba(26,10,10,0.55), rgba(26,10,10,0.55)), url('images/bg-space.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -481,7 +481,7 @@ nav ul a:hover {
 
 /* автор */
 #author {
-    background: linear-gradient(rgba(18,8,8,0.75), rgba(18,8,8,0.75)), url('images/bg-space.jpg');
+    background: linear-gradient(rgba(18,8,8,0.55), rgba(18,8,8,0.55)), url('images/bg-space.jpg');
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -526,7 +526,6 @@ nav ul a:hover {
     font-style: italic;
     margin-bottom: 12px;
 }
-/* футер */
 /* футер */
 footer {
     background-color: #0d0505;
