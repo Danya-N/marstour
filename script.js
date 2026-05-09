@@ -49,3 +49,20 @@ function updateTimer() {
 
 updateTimer(); // запускаємо одразу
 setInterval(updateTimer, 1000); // оновлюємо кожну секунду
+
+
+// Форма бронювання
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // не перезавантажуємо сторінку
+    document.getElementById('modalOverlay').classList.add('active'); // показуємо popup
+});
+
+function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('active'); // ховаємо popup
+    document.getElementById('bookingForm').reset(); // очищаємо форму
+}
+
+function openBooking() {
+    const booking = document.querySelector('#booking');
+    booking.scrollIntoView({ behavior: 'smooth' }); // прокрутка до форми
+}

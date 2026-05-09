@@ -105,8 +105,8 @@
                 </div>
             </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- Команда -->
     <section id="team">
@@ -200,7 +200,6 @@
                 <img src="images/Mars surface rocks.jpg" alt="Марсіанські скелі">
                 <div class="gallery-caption"> Наш п'ятизірковий готель. Ремонт у процесі. </div>
             </div>
-
         </div>
     </section>
 
@@ -245,9 +244,61 @@
                 <h3> Статус </h3>
                 <p> Ти був на Марсі. Більше нічого пояснювати не треба. </p>
             </div>
-
         </div>
     </section>
+
+
+    <!-- Форма бронювання -->
+    <section id="booking">
+        <h2>Забронювати тур</h2>
+        <p class="section-subtitle">Заповни форму — ми зв'яжемось протягом 20 хвилин. Або 20 годин. Залежить від сигналу.</p>
+
+        <form class="booking-form fade-up" id="bookingForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Ваше ім'я</label>
+                    <input type="text" placeholder="Іван Космічний" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="ivan@mars.ua" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Тур</label>
+                    <select required>
+                        <option value="">Оберіть тур</option>
+                        <option>Гора Олімп — $4,200,000,000</option>
+                        <option>Кратер Гейл — $2,800,000,000</option>
+                        <option>Долина Марінер — $3,500,000,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Кількість осіб</label>
+                    <input type="number" placeholder="1" min="1" max="10" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Коментар</label>
+                <textarea placeholder="Алергія на марсіанський пил, особливі побажання..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Відправити заявку 🚀</button>
+        </form>
+    </section>
+
+    <!-- Popup підтвердження -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h3>🚀 Заявку отримано!</h3>
+            <p>Дякуємо! Наш менеджер зв'яжеться з вами найближчим часом.<br>Готуйте скафандр.</p>
+            <button class="btn" onclick="closeModal()">Закрити</button>
+        </div>
+    </div>
+
 
     <!-- Про автора -->
     <section id="author">
