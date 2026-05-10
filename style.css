@@ -80,6 +80,7 @@ nav {
     font-size: 1.4rem;
     font-weight: bold;
     color: #f5a623;
+    text-decoration: none;
 }
 
 nav ul {
@@ -423,7 +424,7 @@ nav ul a:hover {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    cursor: pointer;
+    cursor: default;
 }
 
 .gallery-item img {
@@ -478,7 +479,7 @@ nav ul a:hover {
     border-radius: 16px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .fact-card:hover {
@@ -544,6 +545,8 @@ nav ul a:hover {
     font-style: italic;
     margin-bottom: 12px;
 }
+
+
 /* футер */
 footer {
     background-color: #0d0505;
@@ -566,10 +569,14 @@ footer {
 }
 
 .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.3rem;
     color: #f5a623;
     font-weight: bold;
     margin-bottom: 8px;
+    text-decoration: none;
 }
 
 .footer-title {
@@ -607,6 +614,7 @@ footer {
     color: #4a2a2a;
     margin-top: 8px;
 }
+
 
 /* анімація появи секцій*/
 .fade-up {
@@ -779,4 +787,10 @@ footer {
 .fact-card.visible:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(232, 99, 10, 0.2);
+}
+
+nav ul a.active {
+    color: #e8630a;
+    border-bottom: 2px solid #e8630a;
+    padding-bottom: 2px;
 }

@@ -88,3 +88,26 @@ function openBooking(btn) {
     // прокручуємо до форми
     document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
 }
+
+// Активний пункт навігації при скролі
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('nav ul a');
+
+const sectionObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id'); // беремо id секції
+
+            navItems.forEach(function(link) {
+                link.classList.remove('active'); // знімаємо з усіх
+                if (link.getAttribute('href') === '#' + id) {
+                    link.classList.add('active'); // додаємо тільки поточному
+                }
+            });
+        }
+    });
+}, { threshold: 0.4 }); // секція має бути видна на 40%
+
+sections.forEach(function(section) {
+    sectionObserver.observe(section);
+});
