@@ -58,20 +58,25 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #0d0505;
-    padding: 20px 40px;
+    padding: 20px 80px;
     z-index: 100;
+
+    background-color: rgba(13, 5, 5, 0.75);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(232, 99, 10, 0.25);
+    box-shadow: 0 4px 24px rgba(232, 99, 10, 0.08);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.4rem;
     font-weight: bold;
     color: #f5a623;
@@ -223,7 +228,7 @@ nav ul a:hover {
 }
 
 .tour-card:nth-child(3) {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .tour-header {
