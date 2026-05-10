@@ -615,6 +615,14 @@ footer {
     margin-top: 8px;
 }
 
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    justify-content: flex-end;
+}
+
 
 /* анімація появи секцій*/
 .fade-up {
@@ -627,6 +635,8 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 /* таймер */
 .countdown {
@@ -664,6 +674,8 @@ footer {
     color: #c9a98a;
     font-size: 0.75rem;
 }
+
+
 
 /* форма бронювання */
 #booking {
@@ -731,6 +743,8 @@ footer {
     margin-bottom: 20px;
 }
 
+
+
 /* modal */
 .modal-overlay {
     position: fixed;
@@ -770,6 +784,8 @@ footer {
     line-height: 1.8;
     margin-bottom: 28px;
 }
+
+
 
 /* виправлення ховеру для карток з анімацією */
 .tour-card.visible:hover {
